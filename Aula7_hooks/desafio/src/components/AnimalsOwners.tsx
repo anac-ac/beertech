@@ -1,6 +1,11 @@
 import React from 'react';
 
+// interface IProps{
+
+// }
+
 export default function AnimalsOwners(){
+
   return(
     <section id="report">
         <button>Ordenar donos com mais animais</button>

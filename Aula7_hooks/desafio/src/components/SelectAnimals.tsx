@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import IAnimal from '../apifake/Interfaces/IAnimal';
+import AnimalsOwners from './AnimalsOwners';
 
 import Animals from '../apifake/Animals';
 
@@ -24,7 +25,10 @@ export default function SelectAnimals(props: IProps) {
     getAnimals();
   },[props.ownerId]);
 
+  // const animalsCount = animals.length;
+
   return(
+    <>
     <section id="animals-section">
       <label htmlFor="animals">Animais:</label>
       <select id="animals">
@@ -33,5 +37,7 @@ export default function SelectAnimals(props: IProps) {
         ))}
       </select>
     </section>
+    <AnimalsOwners/>
+    </>
   )
 }
